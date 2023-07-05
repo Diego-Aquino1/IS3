@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" type="text/css" href="static/carrito.css">
+</head>
+<script src="static/carrito.js"></script>
+<body>
+<div class="containermain">
+    <div class="maincompra">
+        <div class="header">
+            <img src="https://cdn.shopify.com/s/files/1/0044/0234/8104/files/Logo-ACHORAO_103c0355-1cd7-440d-99eb-7d3ca7562290_x320.png?v=1667572107">
+        </div>
+        <div class="contacto">
+            <div class="header_contacto">
+                <p class="headermenu">Contacto</p>
+                <p>¿Ya tienes una cuenta?
+                    <a href="/login">Iniciar Sesion</a>
+                </p>
+            </div>
+            <input type="text" placeholder="Correo electronico">
+            <div class="bot_contacto">
+                <input type="checkbox" id="Aceptacion">
+                <label for="Aceptacion" >Enviarme novedades y ofertas por correo</label>
+            </div>
+        </div>
+        <div class="metodo_entrega">
+            <p class="headermenu">Forma de Entrega</p>
+            <div class="options_entrega">
+                <div class="envio1">
+                    <input type="radio" name="opciones" id="envio" checked>
+                    <label for="envio">Envio a todo el Perú</label>
+                </div>
+                <div class="recojo1">
+                    <input type="radio" name="opciones" id="recojo">
+                    <label for="recojo">Retiro GRATIS en Almacen</label>
+                </div>
+            </div>
+        </div>
+        <div class="envio_main" id="envio_main">
+            Envio
+        </div>
+        <div class="recojo_main" id="recojo_main">
+            <p class="headermenu">Lugares de retiro</p>
+            <p class="recojo_fot">Hay una tienda cercana donde se puede retirar</p>
+            <div class="tienda">
+                <div class="tiendaizq">
+                    <p class="tienda_main">Tiendita</p>
+                    <p class="tienda_fot">CompuArequipa, Calle Manuel Muñoz Najar</p>
+                </div>
+                <div class="tiendader">
+                    <p class="tienda_main">Gratis</p>
+                    <p class="tienda_fot">Normalmente está listo en 2 horas</p>
+                </div>
+            </div>
+        </div>
+        <div class="pago">
+            <button>Continuar con el Pago</button>
+        </div>
+    </div>
+    <div class="maininfo">
+        INFORMACION DE COMPRA
+    </div>
+</div>
+</body>
+</html>

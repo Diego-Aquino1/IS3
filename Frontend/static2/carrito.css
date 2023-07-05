@@ -1,0 +1,253 @@
+:root{
+    --principal_color: dimgrey;
+    --secundary_color: deepskyblue;
+    --contrast_color: rgb(129,129,129);
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin : 0;
+}
+
+.containermain{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.maincompra{
+    align-self: flex-start;
+    padding: 6%;
+    padding-bottom: 8%;
+    padding-top: 6%;
+    border-right: solid 0.5px;
+    border-color: var(--contrast_color);
+    width: 37.8%;
+    min-height: 100%;
+    height 80vh;
+}
+
+.maininfo{
+    width: 27.5%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.header{
+    font-size: 40px;
+    text-align: center;
+}
+
+.header img{
+    width: 40%;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto input{
+    padding-left: 12px;
+    height: 48px;
+    border: 0.5px solid ;
+    border-radius: 3px;
+    border-color: var(--contrast_color);
+    background-color: black;
+    color: white;
+}
+
+input[type="text"]:focus{
+    border: transparent;
+    outline: 1px solid var(--secundary_color);
+    transform: 3ms;
+}
+
+.bot_contacto{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+input[type="checkbox"] {
+    content: "✔";
+    height: 18px;
+    width: 18px;
+    appearance: none;
+    background-color: black;
+    border: solid 0.5px;
+    cursor: pointer;
+    border-color: var(--secundary_color);
+}
+
+input[type="checkbox"]:disabled{
+    border-color: var(--secundary_color);
+}
+
+input[type="checkbox"]:checked {
+    content: "✔";
+    color: white;
+    background-color: var(--secundary_color);
+}
+
+.bot_contacto label{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.header_contacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_contacto a{
+    color: var(--secundary_color);
+}
+
+.headermenu{
+    font-size: 20px;
+}
+
+.options_entrega{
+    display: flex;
+    flex-direction: column;
+}
+
+.envio1{
+    display: flex;
+    padding-left: 12px;
+    gap: 12px;
+    align-items: center;
+    height: 55px;
+    border: solid 0.5px;
+    border-color: var(--principal_color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.recojo1{
+    display: flex;
+    padding-left: 12px;
+    gap: 12px;
+    align-items: center;
+    height: 55px;
+    border: solid 0.5px;
+    border-color: var(--principal_color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.envio1:active{
+    border-color: var(--secundary_color);
+}
+
+.recojo1:active{
+    border-color: var(--secundary_color);
+}
+
+input[type="radio"]{
+    appearance: none;
+    border: none;
+    background-color: whitesmoke;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked{
+    appearance: none;
+    background-color: var(--secundary_color);
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--secundary_color);
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold;
+}
+
+.envio1.activo{
+    border-color: var(--secundary_color);
+}
+
+.recojo1.activo{
+    border-color: var(--secundary_color);
+}
+
+.recojo_fot{
+    color: var(--contrast_color);
+}
+
+.tienda{
+    display: flex;
+    flex-direction: row;
+    border: solid 0.5px;
+    border-color: var(--secundary_color);
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+}
+
+.tiendaizq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tiendader{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tienda_main{
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+}
+
+.tienda_fot{
+    margin: 0;
+    color: rgb(129,129,129);
+}
+
+.tiendader p.tienda_main{
+    right: 0px;
+}
+
+.pago{
+    position: relative;
+}
+
+.pago button{
+    position: absolute;
+    width: 180px;
+    height: 65px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    right: 0;
+}
+
+.pago button:hover{
+    background-color: rgb(202, 0, 0);
+}
+
+#envio_main,
+#recojo_main {
+  display: none;
+}
