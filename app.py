@@ -17,7 +17,6 @@ app.register_blueprint(task_blueprint)
 cors = CORS(app)
 app.config['SECRET_KEY'] = 'keyy'
 
-
 # @app.route('/', defaults={'path': ''})
 # @app.route('/<path:path>')
 # def dender_vue(path):
@@ -52,6 +51,10 @@ def login():
         # Lógica para autenticar al usuario y redirigir a la página deseada
         return 'Inicio de sesión exitoso'
     return render_template('accounts/login.html', form=form)
+
+@app.route('/register')
+def register():
+    return render_template('accounts/register.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
